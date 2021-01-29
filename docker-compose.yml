@@ -1,0 +1,20 @@
+version: '3.7'
+services:
+#  horus_log_api:
+#    image: zenika/kotlin
+#    depends_on:
+#      - horus_log_db
+#    volumes:
+#      - .:/app
+#    ports:
+#      - 8000:8000
+
+  horus_log_db:
+    image: mariadb
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=horus_db
+      - MYSQL_USER=user_user
+      - MYSQL_PASSWORD=p@ssw0rd
+    ports:
+      - 3306:3306
