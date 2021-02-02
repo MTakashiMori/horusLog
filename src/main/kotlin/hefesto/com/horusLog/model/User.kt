@@ -3,6 +3,7 @@ package hefesto.com.horusLog.model
 import javax.persistence.*
 
 @Entity
+@Table(name="users")
 class User (
         @Id
         @GeneratedValue

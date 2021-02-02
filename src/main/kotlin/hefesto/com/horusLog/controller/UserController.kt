@@ -11,7 +11,7 @@ class UserController(private val repository: UserRepository)
 {
 
     @GetMapping("/")
-    fun all(): List<User> {
+    fun all(): MutableIterable<User> {
         return repository.findAll();
     }
 
